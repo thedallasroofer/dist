@@ -1,0 +1,11 @@
+# Cloudflare Pages redirect rules
+# Format: /old-path  /new-path  301
+
+# Trailing-slash normalisation (Cloudflare handles this natively, but explicit is safer)
+/free-roof-inspection/  /free-roof-inspection  301
+/service-areas/         /service-areas         301
+/about/                 /about                 301
+
+# Blog index — serve /blog and /blog/ from /blog/index.html
+/blog                   /blog/index            301
+/blog/                  /blog/index            301

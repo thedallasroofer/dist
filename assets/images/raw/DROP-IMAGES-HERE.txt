@@ -1,0 +1,22 @@
+DROP PHOTOS HERE — name them before dropping.
+
+NAMING CONVENTION:  [topic]-[city]-[descriptor].[ext]
+
+EXAMPLES:
+  hail-damage-shingles-frisco-texas.jpg
+  roof-replacement-before-plano.heic
+  storm-damage-ridge-cap-allen-texas.jpg
+  new-roof-after-prosper.jpg
+
+THEN RUN (from the app/ folder in VS Code terminal):
+  python3 process-images.py
+
+TWO VERSIONS ARE CREATED AUTOMATICALLY:
+  assets/images/[name].webp        ← hero  (1920px) — for homepage/service pages
+  assets/images/blog/[name].webp   ← blog  (1200px) — for blog posts/content
+
+Originals in this folder are deleted automatically to save Drive space.
+
+IPHONE USERS:
+  Either shoot in JPG mode: Settings → Camera → Formats → Most Compatible
+  Or just drop .heic files — the script converts them automatically on Mac.
